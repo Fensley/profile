@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 0.3s;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.one,
+.two,
+.three {
+  background-color: rgb(230, 237, 250);
+}
+p {
+  max-width: 380px;
+}
+img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.one {
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+.one button {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  background-color: rgb(230, 237, 250);
+}
+.one h4 {
+  margin-bottom: 3px;
+}
+.two,
+.three {
+  padding: 30px;
+}
+.img {
+  display: flex;
+  justify-content: space-between;
+}
+.img button {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  background-color: rgb(230, 237, 250);
+}
+
+.two h4,
+.three h4 {
+  margin-bottom: 3px;
+}
+.two p,
+.three p {
+  margin-bottom: 7px;
+}
+
+span {
+  font-weight: bold;
+}
+.two,
+.three {
+  border-radius: 2px;
+}
+.long {
+  max-width: 100%;
+}
+.three button {
+  background-color: black;
+  color: white;
+}
+.one button:hover,
+.two button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.three button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 783px) {
+  body {
+    height: 120vh;
+  }
+  .card {
+    gap: 1rem;
+  }
+}
